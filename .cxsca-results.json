@@ -1,0 +1,380 @@
+{
+    "scanMetadata": {
+        "startTime": "2021-10-28T11:10:23.4321635Z",
+        "scanPath": "/tmp/00000000-0000-0000-0000-000000000000",
+        "scanArguments": {
+            "projectDownloadUrl": "https://joaod-dev.s3.amazonaws.com/Catia/JavaVulnerableLab-master.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAZWPGXHZVKRZ523DC%2F20211028%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20211028T110727Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Security-Token=FwoGZXIvYXdzEAcaDO%2Bd0S1RsuxAckRcACKGAaVYTqbpWRpe9z8xixXOkbJbhNau82EhQblmYkiFiYcZnpgi6LEDguhWAXCXMMgbMU0Hi6v7c2SzgICbqIw8uDkZ7Cp2zSOWjQwgkAWXvMalpiUXlVrzYxH2ropylPhrem%2BHrNSlPXfeCEEzp%2FUQK94NaYugWmkk2LRhHWphE1NLPlGKjHXYKP2y5YsGMiiHIcjuo3xfjT0kHoiUPKKTWzX21JtFvzcLgNxOJvGsIyDU7y3Ef79Y&X-Amz-Signature=e7d1b079409142a20bc8991977add9d940a59ddb3001b690185e2813929544a7",
+            "scanId": "00000000-0000-0000-0000-000000000000",
+            "excludePatterns": {
+                "patterns": []
+            },
+            "ignoreDevDependencies": false,
+            "shouldResolveDependenciesLocally": true,
+            "npmPartialResultsFallbackScriptPath": "",
+            "environmentVariables": {},
+            "shouldUseHoistFlagWhenUseLerna": true,
+            "shouldResolvePartialResults": true,
+            "projectRelativePathsToPythonVersionsMapping": {},
+            "additionalScanArguments": {},
+            "extractArchives": null,
+            "extractDepth": null,
+            "gradleExcludedScopes": null,
+            "gradleIncludedScopes": null,
+            "gradleDevDependenciesScopes": null,
+            "gradleModulesToIgnore": null,
+            "gradleModulesToInclude": null,
+            "gradlePluginDependenciesScopes": null,
+            "proxies": {},
+            "enableContainerScan": true
+        },
+        "scanDiagnostics": {
+            "ShouldResolveDependenciesLocally": true,
+            "FolderAnalyzer.scopeMilliseconds": 73,
+            "EnvironmentVariables": "",
+            "ShouldResolvePartialResults": "True",
+            "scopeMilliseconds": 15836,
+            "FolderAnalyzer.analyzedFilesCount": 2.0
+        }
+    },
+    "analyzedFiles": [
+        {
+            "relativePath": "JavaVulnerableLab-master/docker-compose.yml",
+            "size": 140,
+            "fingerprints": [
+                {
+                    "type": "Sha1",
+                    "value": "852c49ec86cf690eb2f3d685181aebfa79674b3b"
+                },
+                {
+                    "type": "Sha1",
+                    "value": "852c49ec86cf690eb2f3d685181aebfa79674b3b"
+                }
+            ]
+        },
+        {
+            "relativePath": "JavaVulnerableLab-master/Dockerfile",
+            "size": 227,
+            "fingerprints": [
+                {
+                    "type": "Sha1",
+                    "value": "77004f004ecd87e430a30173e0d90c9a9ef61516"
+                },
+                {
+                    "type": "Sha1",
+                    "value": "77004f004ecd87e430a30173e0d90c9a9ef61516"
+                }
+            ]
+        }
+    ],
+    "dependencyResolutionResults": [],
+    "containerResolutionResults": {
+        "imagePaths": [
+            {
+                "nodeId": "f0fca7c1-515f-4467-b3ec-4c009d45f19e",
+                "path": "JavaVulnerableLab-master/Dockerfile",
+                "stages": [
+                    {
+                        "imageName": "python",
+                        "imageTag": "rc-alpine3.13",
+                        "name": "",
+                        "layerId": "4e9f2cdf438714c2c4533e28c6c41a89cc6c1b46cf77e54c488db30ca4f5b6f3",
+                        "distribution": "alpine:3.13.6"
+                    }
+                ]
+            }
+        ],
+        "layers": {
+            "a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4": {
+                "parentLayerId": "",
+                "packages": []
+            },
+            "9037656fa4b3b4b79af2c691bf3609db8959b2539c26e1e538ef643b6f9b686a": {
+                "parentLayerId": "a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4",
+                "packages": []
+            },
+            "cdf283d068b9a8487c38ae8a7379c212abcd31e26a0382778ab6c7339197cf3d": {
+                "parentLayerId": "9037656fa4b3b4b79af2c691bf3609db8959b2539c26e1e538ef643b6f9b686a",
+                "packages": []
+            },
+            "1775a3b6f5fbf962e14e2b84358d2d304caa1f08415f55e965db86766d04bc09": {
+                "parentLayerId": "cdf283d068b9a8487c38ae8a7379c212abcd31e26a0382778ab6c7339197cf3d",
+                "packages": [
+                    {
+                        "name": "musl",
+                        "version": "1.2.2-r1"
+                    },
+                    {
+                        "name": "busybox",
+                        "version": "1.32.1-r6"
+                    },
+                    {
+                        "name": "alpine-baselayout",
+                        "version": "3.2.0-r8"
+                    },
+                    {
+                        "name": "alpine-keys",
+                        "version": "2.2-r0"
+                    },
+                    {
+                        "name": "libcrypto1.1",
+                        "version": "1.1.1l-r0"
+                    },
+                    {
+                        "name": "libssl1.1",
+                        "version": "1.1.1l-r0"
+                    },
+                    {
+                        "name": "ca-certificates-bundle",
+                        "version": "20191127-r5"
+                    },
+                    {
+                        "name": "libtls-standalone",
+                        "version": "2.9.1-r1"
+                    },
+                    {
+                        "name": "ssl_client",
+                        "version": "1.32.1-r6"
+                    },
+                    {
+                        "name": "zlib",
+                        "version": "1.2.11-r3"
+                    },
+                    {
+                        "name": "apk-tools",
+                        "version": "2.12.7-r0"
+                    },
+                    {
+                        "name": "scanelf",
+                        "version": "1.2.8-r0"
+                    },
+                    {
+                        "name": "musl-utils",
+                        "version": "1.2.2-r1"
+                    },
+                    {
+                        "name": "libc-utils",
+                        "version": "0.7.2-r3"
+                    },
+                    {
+                        "name": "ca-certificates",
+                        "version": "20191127-r5"
+                    },
+                    {
+                        "name": "tzdata",
+                        "version": "2021a-r0"
+                    },
+                    {
+                        "name": "libffi",
+                        "version": "3.3-r2"
+                    },
+                    {
+                        "name": "libintl",
+                        "version": "0.20.2-r2"
+                    },
+                    {
+                        "name": "ncurses-terminfo-base",
+                        "version": "6.2_p20210109-r0"
+                    },
+                    {
+                        "name": "ncurses-libs",
+                        "version": "6.2_p20210109-r0"
+                    },
+                    {
+                        "name": "libbz2",
+                        "version": "1.0.8-r1"
+                    },
+                    {
+                        "name": "gdbm",
+                        "version": "1.19-r0"
+                    },
+                    {
+                        "name": "sqlite-libs",
+                        "version": "3.34.1-r0"
+                    },
+                    {
+                        "name": "xz-libs",
+                        "version": "5.2.5-r0"
+                    },
+                    {
+                        "name": "expat",
+                        "version": "2.2.10-r1"
+                    },
+                    {
+                        "name": "libtirpc-conf",
+                        "version": "1.3.1-r0"
+                    },
+                    {
+                        "name": "krb5-conf",
+                        "version": "1.0-r2"
+                    },
+                    {
+                        "name": "libcom_err",
+                        "version": "1.45.7-r0"
+                    },
+                    {
+                        "name": "keyutils-libs",
+                        "version": "1.6.3-r0"
+                    },
+                    {
+                        "name": "libverto",
+                        "version": "0.3.1-r1"
+                    },
+                    {
+                        "name": "krb5-libs",
+                        "version": "1.18.4-r0"
+                    },
+                    {
+                        "name": "libtirpc",
+                        "version": "1.3.1-r0"
+                    },
+                    {
+                        "name": "libnsl",
+                        "version": "1.3.0-r0"
+                    },
+                    {
+                        "name": "libuuid",
+                        "version": "2.36.1-r1"
+                    },
+                    {
+                        "name": "readline",
+                        "version": "8.1.0-r0"
+                    },
+                    {
+                        "name": ".python-rundeps",
+                        "version": "20210908.011116"
+                    }
+                ]
+            },
+            "80d1de1f04a6f93fee3a72b9e7af8ef615eaeeafcb72d57303b2ded0d46fbe10": {
+                "parentLayerId": "1775a3b6f5fbf962e14e2b84358d2d304caa1f08415f55e965db86766d04bc09",
+                "packages": [
+                    {
+                        "name": "musl",
+                        "version": "1.2.2-r1"
+                    },
+                    {
+                        "name": "busybox",
+                        "version": "1.32.1-r6"
+                    },
+                    {
+                        "name": "alpine-baselayout",
+                        "version": "3.2.0-r8"
+                    },
+                    {
+                        "name": "alpine-keys",
+                        "version": "2.2-r0"
+                    },
+                    {
+                        "name": "libcrypto1.1",
+                        "version": "1.1.1l-r0"
+                    },
+                    {
+                        "name": "libssl1.1",
+                        "version": "1.1.1l-r0"
+                    },
+                    {
+                        "name": "ca-certificates-bundle",
+                        "version": "20191127-r5"
+                    },
+                    {
+                        "name": "libtls-standalone",
+                        "version": "2.9.1-r1"
+                    },
+                    {
+                        "name": "ssl_client",
+                        "version": "1.32.1-r6"
+                    },
+                    {
+                        "name": "zlib",
+                        "version": "1.2.11-r3"
+                    },
+                    {
+                        "name": "apk-tools",
+                        "version": "2.12.7-r0"
+                    },
+                    {
+                        "name": "scanelf",
+                        "version": "1.2.8-r0"
+                    },
+                    {
+                        "name": "musl-utils",
+                        "version": "1.2.2-r1"
+                    },
+                    {
+                        "name": "libc-utils",
+                        "version": "0.7.2-r3"
+                    },
+                    {
+                        "name": "ca-certificates",
+                        "version": "20191127-r5"
+                    },
+                    {
+                        "name": "tzdata",
+                        "version": "2021a-r0"
+                    }
+                ]
+            },
+            "4e9f2cdf438714c2c4533e28c6c41a89cc6c1b46cf77e54c488db30ca4f5b6f3": {
+                "parentLayerId": "80d1de1f04a6f93fee3a72b9e7af8ef615eaeeafcb72d57303b2ded0d46fbe10",
+                "packages": [
+                    {
+                        "name": "musl",
+                        "version": "1.2.2-r1"
+                    },
+                    {
+                        "name": "busybox",
+                        "version": "1.32.1-r6"
+                    },
+                    {
+                        "name": "alpine-baselayout",
+                        "version": "3.2.0-r8"
+                    },
+                    {
+                        "name": "alpine-keys",
+                        "version": "2.2-r0"
+                    },
+                    {
+                        "name": "libcrypto1.1",
+                        "version": "1.1.1l-r0"
+                    },
+                    {
+                        "name": "libssl1.1",
+                        "version": "1.1.1l-r0"
+                    },
+                    {
+                        "name": "ca-certificates-bundle",
+                        "version": "20191127-r5"
+                    },
+                    {
+                        "name": "libtls-standalone",
+                        "version": "2.9.1-r1"
+                    },
+                    {
+                        "name": "ssl_client",
+                        "version": "1.32.1-r6"
+                    },
+                    {
+                        "name": "zlib",
+                        "version": "1.2.11-r3"
+                    },
+                    {
+                        "name": "apk-tools",
+                        "version": "2.12.7-r0"
+                    },
+                    {
+                        "name": "scanelf",
+                        "version": "1.2.8-r0"
+                    },
+                    {
+                        "name": "musl-utils",
+                        "version": "1.2.2-r1"
+                    },
+                    {
+                        "name": "libc-utils",
+                        "version": "0.7.2-r3"
+                    }
+                ]
+            }
+        }
+    }
+}
